@@ -7,7 +7,7 @@
 *.out
 vendor
 go.work
-links.txt
-exam.html
+*.txt
+*.html
 .idea
 .DS_Store

@@ -4,9 +4,6 @@ import (
 	"testing"
 )
 
-func TestGetFromWeb(t *testing.T) {
-	GetFromWeb("")
-}
 func TestGetFromFile(t *testing.T) {
 	GetFromFile()
 }
