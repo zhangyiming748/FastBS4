@@ -3,6 +3,7 @@ module github.com/zhangyiming748/FastBS4
 go 1.22
 
 require (
+	github.com/beevik/etree v1.3.0
 	github.com/stretchr/testify v1.9.0
 	golang.org/x/net v0.24.0
 )

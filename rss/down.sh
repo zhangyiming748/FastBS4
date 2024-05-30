@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+wget -e use_proxy=yes -e http_proxy=192.168.1.20:8889 -e  https_proxy=192.168.1.20:8889 --no-check-certificate -O "助眠合集(二).mp3" https://backend.endpoints.firstory-709db.cloud.goog/play.mp3?url=https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckt16l0x475si0919ubz8ycd8%2Fclfoswd9v00gy010w150q9e26.mp3
+wget -e use_proxy=yes -e http_proxy=192.168.1.20:8889 -e  https_proxy=192.168.1.20:8889 --no-check-certificate -O "助眠合集(一).m4a" https://backend.endpoints.firstory-709db.cloud.goog/play.m4a?url=https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckt16l0x475si0919ubz8ycd8%2F1630481682930.m4a
+#!/usr/bin/env bash
+wget -e use_proxy=yes -e http_proxy=192.168.1.20:8889 -e  https_proxy=192.168.1.20:8889 --no-check-certificate -O "助眠合集(二).mp3" https://backend.endpoints.firstory-709db.cloud.goog/play.mp3?url=https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckt16l0x475si0919ubz8ycd8%2Fclfoswd9v00gy010w150q9e26.mp3
+wget -e use_proxy=yes -e http_proxy=192.168.1.20:8889 -e  https_proxy=192.168.1.20:8889 --no-check-certificate -O "助眠合集(一).m4a" https://backend.endpoints.firstory-709db.cloud.goog/play.m4a?url=https%3A%2F%2Fd3mww1g1pfq2pt.cloudfront.net%2FRecord%2Fckt16l0x475si0919ubz8ycd8%2F1630481682930.m4a

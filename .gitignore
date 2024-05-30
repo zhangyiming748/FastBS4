@@ -11,3 +11,6 @@ go.work
 *.html
 .idea
 .DS_Store
+*.aac
+*.log
+*.db
