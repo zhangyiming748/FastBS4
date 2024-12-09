@@ -1,0 +1,31 @@
+name: Manual Test Workflow
+
+on:
+  workflow_dispatch: # 定义手动触发条件
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # 使用最新的Ubuntu环境运行任务
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # 检出当前代码仓库的代码
+
+      - name: Enter liwenzhou directory
+        run: |
+          cd liwenzhou # 进入liwenzhou目录，如果不存在会报错，可按需调整处理不存在的情况
+          pwd # 打印当前目录路径，可用于验证是否进入成功，可按需删除此行
+
+      - name: Set up Go 1.23.4
+        uses: actions/setup-go@v4 # 使用官方的Go语言环境设置action
+        with:
+          go-version: 1.23.4 # 指定Go语言版本为1.23.4
+
+      - name: Run tests
+        run: go test -v -run TestGetAllFromWeb -timeout 350m # 运行指定的测试命令
+
+      - name: Archive Markdown files as artifact
+        uses: actions/upload-artifact@v3 # 使用官方的上传工件action
+        with:
+          name: markdown-artifacts # 工件的名称，可自行定义
+          path: "*.md" # 收集当前目录下所有的.md文件打包为工件，可根据实际情况调整路径匹配规则
