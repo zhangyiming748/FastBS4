@@ -26,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@v3 # 使用官方的上传工件action
         with:
           name: markdown-artifacts # 工件的名称，可自行定义
-          path: "*.md" # 收集当前目录下所有的.md文件打包为工件，可根据实际情况调整路径匹配规则
+          path: "**/*.md" # 收集当前目录下所有的.md文件打包为工件，可根据实际情况调整路径匹配规则
