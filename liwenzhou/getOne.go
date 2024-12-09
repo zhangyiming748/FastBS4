@@ -31,6 +31,11 @@ func extractArticlePost(root *html.Node) string {
 	return articleContent.String()
 }
 func GetOne(uri, title string) {
+	defer func() {
+		if err := recover(); err != nil {
+			fmt.Printf("当前获取发生错误%v,此时的url=%s,文章标题=%s\n", err, uri, title)
+		}
+	}()
 	resp, err := http.Get(uri)
 	if err != nil {
 		fmt.Printf("请求网页出错: %v\n", err)

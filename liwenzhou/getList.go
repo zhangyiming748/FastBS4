@@ -49,8 +49,15 @@ func GetFromArchive() []item {
 	lis := root.FindAll("li")
 	for i, li := range lis {
 		a := li.Find("a")
+		title := a.Attrs()["title"]
+		if title == "" {
+			title = a.Text()
+			if title == "" {
+				continue
+			}
+		}
 		it := item{
-			Title: a.Attrs()["title"],
+			Title: title,
 			Link:  a.Attrs()["href"],
 		}
 		fmt.Printf("获取到的%d单个结构体%+v\n", i, it)
