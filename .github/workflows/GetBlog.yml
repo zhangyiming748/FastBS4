@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3 # 检出当前代码仓库的代码
+        uses: actions/checkout@v4 # 检出当前代码仓库的代码
       - name: Set up Go 1.23.4
         uses: actions/setup-go@v4 # 使用官方的Go语言环境设置action
         with:
