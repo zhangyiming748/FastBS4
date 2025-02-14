@@ -18,3 +18,6 @@ go.work
 *.avif
 *.mp3
 *.md
+/openkylin/clone.sh
+/openkylin/repos/git.sh
+/openkylin/repos.txt.xz
