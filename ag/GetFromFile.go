@@ -2,9 +2,10 @@ package ph
 
 import (
 	"fmt"
-	"github.com/zhangyiming748/FastBS4/soup"
 	"os"
 	"strings"
+
+	"github.com/zhangyiming748/FastBS4/soup"
 )
 
 const (
@@ -18,7 +19,7 @@ func GetFromFile() {
 	}
 	root := soup.HTMLParse(string(open))
 	as := root.FindAll("a")
-	file, err := os.OpenFile("第二季601-700.txt", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0777)
+	file, err := os.OpenFile("第二季601-700.txt", os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0777)
 	if err != nil {
 		return
 	}
