@@ -19,7 +19,8 @@ func GetFromFile(outName string) {
 	}
 	root := soup.HTMLParse(string(open))
 	as := root.FindAll("a")
-	file, err := os.OpenFile(outName, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0777)
+	// file, err := os.OpenFile(outName, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0777)
+	file, err := os.OpenFile(outName, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0777)
 	if err != nil {
 		return
 	}
